@@ -10,21 +10,21 @@ docker build ./ -t nginx-image
 # login to repository
 
 docker login -u {username} -p {password} {host}:{port}
-                                         |___________|
-                                           optional
-                                      (default dockerhub)
+#                                        |___________|
+#                                          optional
+#                                     (default dockerhub)
 
 # retag image
 
 docker tag nginx-image {host}:{port}/nginx-image:0.1.0
-                       |___________|
-                   or dockerhub username
+#                      |___________|
+#                  or dockerhub username
 
 # push image
 
 docker push {host}:{port}/nginx-image:0.1.0
-            |___________|
-        or dockerhub username
+#           |___________|
+#       or dockerhub username
 
 # run image
 
